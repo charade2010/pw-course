@@ -1,0 +1,9 @@
+a. Cau lenh cai dat email: 
+git config --global user.email "you@example.com"
+
+Cau lenh cai dat user:
+git config --global user.name "Your Name"
+
+b. K6 - Nguyen Minh Khang
+
+ 	
