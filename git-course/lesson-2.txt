@@ -1,0 +1,17 @@
+1) - git init: Khởi tạo 1 thư mục mới.
+   - git add <file_name>: Thêm 1 file vào repository.
+   - git add .: Thêm tất cả các files ở máy local vào repository.
+   - git commit -m “message”: Đẩy file từ vùng Staging Area lên vùng Repository kèm theo ghi chú.
+
+
+2) Working Directory: File 1, File 2, File 3
+   Staging Area: Không có file nào.
+   Repository: File 1
+
+Giải thích: 
+Tạo 3 file: file1, file2, file3
+Chạy lệnh: git init -> Tạo repository lưu trữ trên server
+Chạy lệnh: git commit -m”init project” -> Lệnh sai vì chưa có file gì ở vùng Staging Area để commit lên Repository.
+Chạy lệnh: git add file1 -> Thêm "File 1" vào vùng Staging Area.
+Chạy lệnh: git commit -m”add file1” -> Commit "File 1" lên Repository.
+Chạy lệnh: git add file -> Lệnh sai.
