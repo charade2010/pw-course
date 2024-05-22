@@ -1,0 +1,23 @@
+1) Giải thích các câu lệnh: 
+git commit --amend: Thay đổi message cho commit cuối cùng (Cách này dài dòng, có steps con) 
+git commit --amend -m”<message>”: Thay đổi message cho commit cuối cùng (Chỉnh sửa lại commit cũ ngay trong câu lệnh này luôn). 
+git restore --staged <file>: Đưa file từ Staging area về Working Directory.
+git reset HEAD~1: Đưa file từ vùng Repository về Working directory (không commit file đó nữa). 
+
+2) Tạo 3 file: file1, file2, file3
+Chạy lệnh: git init --> Khởi tạo repo local.
+Chạy lệnh: git commit -m”init project”  --> Lệnh sai, chưa add file nào vào vùng area thì không có gì để commit!
+Chạy lệnh: git add file1 --> Add "file1" vào vùng area.
+Chạy lệnh: git commit -m”add file”  --> Commit "file 1" lên repo server.
+Chạy lệnh: git add . --> Add tất cả 3 files vào vùng area. 
+Chạy lệnh: git restore --staged file2  --> Đưa "file 2" từ vùng area về lại repo local. 
+Chạy lệnh: git commit -m”add all files” --> Commit "file1" và "file3" lên repo server.
+Chạy lệnh: git reset HEAD~1 --> Đưa "file1" và "file3" về lại repo local, undo commit.
+
+Sau khi chạy xong các câu lệnh trên thì:
+Working Directory: file1, file2, file 3
+Staging Area và Repository: Không có file.
+
+3) Working Directory: "file1.txt" và "file3.txt"
+   Staging area: không có.
+   Repository: "file2.txt"
