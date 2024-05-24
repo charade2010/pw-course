@@ -3,7 +3,7 @@ const gioHang = [
     { name: "grape", price: 0 },
     { name: "banana", price: 30 },
     { name: "coconut", price: 45 }
-];
+]; // Tạo 1 mảng các vật phẩm
 console.log("Có một mảng như vầy:", gioHang);
 
 function kiemTraGia() {
@@ -16,4 +16,4 @@ function kiemTraGia() {
     }
 }
 
-kiemTraGia();
+kiemTraGia(); // In ra giá các vật phẩm

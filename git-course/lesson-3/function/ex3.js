@@ -1,4 +1,4 @@
-const arr = [1, 2, 3, 4, 5];
+const arr = [1, 2, 3, 4, 5]; // Khởi tạo mảng
 console.log('Đây là mảng:', arr);
 function sumArray() {
     let tong = 0;
@@ -7,4 +7,4 @@ function sumArray() {
     }
     return tong;
 };
-console.log('Tổng các phần tử trong mảng: ', sumArray());
+console.log('Tổng các phần tử trong mảng: ', sumArray()); //In ra tổng các phần tử trong mảng.

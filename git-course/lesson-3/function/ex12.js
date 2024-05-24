@@ -6,6 +6,6 @@ function checkDegree(degree) {
     } else {
         return "Lạnh";
     }
-}
+} // Hàm kiểm tra nhiệt độ thuộc loại nào.
 let degree = 30;
-console.log("Nhiệt độ là:", degree, checkDegree(degree));
+console.log("Nhiệt độ là:", degree, checkDegree(degree)); // In ra nhiệt độ và phân loại nhiệt độ.

@@ -4,7 +4,8 @@ function checkStoreOpen(hour) {
     } else {
         console.log("Cửa hàng đã đóng cửa.");
     }
-}
+} // Hàm kiểm tra giờ mở cửa của cửa hàng.
+
 let hour = 15;
-console.log("Nhập vào thời gian:\t", hour);
-checkStoreOpen(15);
+console.log("Nhập vào thời gian:\t", hour); 
+checkStoreOpen(15); 
