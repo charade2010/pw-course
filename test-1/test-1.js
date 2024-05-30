@@ -1,4 +1,4 @@
-const { text } = require("stream/consumers");
+
 
 // Phần 1 - Khởi động tàu vũ tụ K6
 console.log("1. Khởi động tàu vũ trụ K6");
@@ -78,5 +78,6 @@ console.log(returnToEarth());
 /* Cách khác
 let message = returnToEarth();
 console.log(message);
-*/
+*/      
 
+    
