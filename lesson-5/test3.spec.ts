@@ -17,11 +17,8 @@ test("Bài học 3: Todo page", async ({ page }) => {
     for (let k = 0; k < 100; k++) {
         // const todoIndex = k + 1;
         if (k % 2 !== 0) {
-            // const todoLocator =  page.locator(`//span[contains(text(),'Todo[${k}]')]`);
-            // await expect(todoLocator).toBeVisible();
             await page.locator(`//span[contains(text(), "Todo[${k+1}]")]//following::div/button[text()="Delete"]`).click();
             await page.waitForTimeout(1000);
-            // await page.locator(`//button[@onclick="deleteTask(${k})"]`).click();
         }
     }
 })
